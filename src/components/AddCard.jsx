@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
 const AddCard = ({ onAddCard }) => {
-  const [data, setData] = useState(""); // Corrected from 'title' to 'data'
+  const [data, setData] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (data.trim()) { // Corrected from 'title' to 'data'
+    if (data.trim()) { 
       onAddCard({
-        desc: data.trim(), // Corrected from 'title' to 'data'
+        desc: data.trim(), 
         filesize: '1mb',
         close: true,
-        tag: { isOpen: false, tagTitle: 'New Card', tagColor: 'blue' },
+        tag: { isOpen: true, tagTitle: 'download', tagColor: 'green' },
       });
-      setData(""); // Corrected from 'setTitle' to 'setData'
+      setData("");
     }
   };
 
@@ -20,8 +20,8 @@ const AddCard = ({ onAddCard }) => {
     <form onSubmit={handleSubmit} className='fixed right-5 '>
       <input
         type="text"
-        value={data} // Corrected from 'title' to 'data'
-        onChange={(e) => setData(e.target.value)} // Corrected from 'setTitle' to 'setData'
+        value={data} 
+        onChange={(e) => setData(e.target.value)} 
         placeholder="enter ur note"
         className=' bg-zinc-900 rounded-xl text-center text-zinc-300'
       />

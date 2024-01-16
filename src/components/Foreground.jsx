@@ -10,19 +10,19 @@ function Foreground() {
       desc: "This is the background we needed",
       filesize: ".9mb",
       close: true,
-      tag: { isOPen: true, tagTitle: "Downlaod Now", tagColor: "green" },
+      tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "sky" },
     },
     {
       desc: "This is the background we needed",
       filesize: ".9mb",
       close: true,
-      tag: { isOPen: true, tagTitle: "Downlaod Now", tagColor: "sky" },
+      tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "sky" },
     },
     {
       desc: "This is the background we needed",
       filesize: ".9mb",
       close: true,
-      tag: { isOPen: true, tagTitle: "Downlaod Now", tagColor: "green" },
+      tag: { isOpen: true, tagTitle: "Downlaod Now", tagColor: "green" },
     },
   ]);
 
